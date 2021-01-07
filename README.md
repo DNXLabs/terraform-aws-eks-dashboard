@@ -30,6 +30,44 @@ output "dashboard_url" {
 
 <!--- BEGIN_TF_DOCS --->
 
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.13 |
+| aws | >= 3.13, < 4.0 |
+| helm | >= 1.0, < 1.4.0 |
+| kubernetes | >= 1.10.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| helm | >= 1.0, < 1.4.0 |
+| kubernetes | >= 1.10.0 |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| cluster\_name | The name of the cluster. | `string` | n/a | yes |
+| create\_namespace | Whether to create k8s namespace with name defined by `namespace`. | `bool` | `true` | no |
+| enabled | n/a | `bool` | `true` | no |
+| helm\_chart\_name | EKS Dashboard chart name. | `string` | `"kubernetes-dashboard"` | no |
+| helm\_chart\_release\_name | EKS Dashboard release name. | `string` | `"kubernetes-dashboard"` | no |
+| helm\_chart\_repo | EKS Dashboard repository name. | `string` | `"https://kubernetes.github.io/dashboard"` | no |
+| helm\_chart\_version | EKS Dashboard chart version. | `string` | `"4.0.0"` | no |
+| mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable. | `any` | `null` | no |
+| namespace | Kubernetes namespace to deploy EKS Spot termination handler Helm chart. | `string` | `"kubernetes-dashboard"` | no |
+| sample\_user\_enabled | Whether to create k8s sample admin user and generate Bearer Token to access dashboard. | `bool` | `false` | no |
+| service\_account\_name | EKS dashboard service account name. | `string` | `"kubernetes-dashboard"` | no |
+| settings | Additional settings which will be passed to the Helm chart values, see https://artifacthub.io/packages/helm/k8s-dashboard/kubernetes-dashboard. | `map(any)` | `{}` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| dashboard\_url | n/a |
 
 <!--- END_TF_DOCS --->
 
