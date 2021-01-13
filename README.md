@@ -49,7 +49,6 @@ output "dashboard_url" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| cluster\_name | The name of the cluster. | `string` | n/a | yes |
 | create\_namespace | Whether to create k8s namespace with name defined by `namespace`. | `bool` | `true` | no |
 | enabled | n/a | `bool` | `true` | no |
 | helm\_chart\_name | EKS Dashboard chart name. | `string` | `"kubernetes-dashboard"` | no |
