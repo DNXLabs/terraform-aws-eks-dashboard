@@ -3,11 +3,6 @@ variable "enabled" {
   default = true
 }
 
-variable "cluster_name" {
-  type        = string
-  description = "The name of the cluster."
-}
-
 variable "helm_chart_name" {
   type        = string
   default     = "kubernetes-dashboard"

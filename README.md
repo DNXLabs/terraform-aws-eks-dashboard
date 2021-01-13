@@ -20,7 +20,6 @@ module "eks_dashboard" {
 
   enabled             = true
   sample_user_enabled = true
-  cluster_name        = module.eks_cluster.cluster_id
 }
 
 output "dashboard_url" {
