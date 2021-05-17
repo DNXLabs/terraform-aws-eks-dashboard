@@ -35,15 +35,15 @@ output "dashboard_url" {
 |------|---------|
 | terraform | >= 0.13 |
 | aws | >= 3.13, < 4.0 |
-| helm | >= 1.0, < 1.4.0 |
-| kubernetes | >= 1.10.0 |
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| helm | >= 1.0, < 1.4.0 |
-| kubernetes | >= 1.10.0 |
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
 
 ## Inputs
 
