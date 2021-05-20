@@ -59,7 +59,7 @@ output "dashboard_url" {
 | namespace | Kubernetes namespace to deploy EKS Spot termination handler Helm chart. | `string` | `"kubernetes-dashboard"` | no |
 | sample\_user\_enabled | Whether to create k8s sample admin user and generate Bearer Token to access dashboard. | `bool` | `false` | no |
 | service\_account\_name | EKS dashboard service account name. | `string` | `"kubernetes-dashboard"` | no |
-| settings | Additional settings which will be passed to the Helm chart values, see https://artifacthub.io/packages/helm/k8s-dashboard/kubernetes-dashboard. | `map(any)` | `{}` | no |
+| settings | Additional settings which will be passed to the Helm chart values, see https://artifacthub.io/packages/helm/k8s-dashboard/kubernetes-dashboard. | `map` | `{}` | no |
 
 ## Outputs
 
