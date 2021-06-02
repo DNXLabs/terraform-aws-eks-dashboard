@@ -1,6 +1,6 @@
 module "eks_dashboard" {
   count  = local.workspace.dashboard.enabled ? 1 : 0
-  source = "git::https://github.com/DNXLabs/terraform-aws-eks-dashboard.git?ref=0.1.1"
+  source = "git::https://github.com/DNXLabs/terraform-aws-eks-dashboard.git?ref=0.2.0"
 
   enabled             = true
   sample_user_enabled = false

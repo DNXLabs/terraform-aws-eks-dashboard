@@ -27,6 +27,8 @@ output "dashboard_url" {
 }
 ```
 
+[See more examples of usage.](https://github.com/DNXLabs/terraform-aws-eks-dashboard/tree/master/examples)
+
 <!--- BEGIN_TF_DOCS --->
 
 ## Requirements
