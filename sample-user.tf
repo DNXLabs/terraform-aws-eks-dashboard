@@ -3,7 +3,7 @@ resource "kubernetes_service_account" "sample_user" {
 
   metadata {
     name      = "admin-user"
-    namespace = "kubernetes-dashboard"
+    namespace = var.namespace
   }
 }
 
@@ -23,6 +23,6 @@ resource "kubernetes_cluster_role_binding" "sample_user" {
   subject {
     kind      = "ServiceAccount"
     name      = "admin-user"
-    namespace = "kubernetes-dashboard"
+    namespace = var.namespace
   }
 }
